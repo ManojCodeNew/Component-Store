@@ -8,17 +8,15 @@ export default function Main() {
   const [jscode, setjscode] = useState('');
 
   const outputRef=useRef(null);
-// useEffect(()=>{
+  // Call when user click run button 
   const run=()=>{
-
-  
   const iframe=outputRef.current;
   if (iframe) {
       iframe.contentWindow.document.body.innerHTML=htmlcode+"<style>"+csscode+"</style>";
       iframe.contentWindow.eval(jscode);
   }
 }
-// },[htmlcode,csscode,jscode]);
+  
   return (
     <>
       <div className="container">
