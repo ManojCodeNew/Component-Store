@@ -1,5 +1,5 @@
 import React from 'react'
-
+// Navbr section 
 export default function Navbar() {
   return (
     <div className='rounded bg-black p-3' >
